@@ -1,0 +1,206 @@
+body{
+	font:13px Arial, Helvetica, sans-serif;
+	color:#333;
+	/*line-height:18px;*/
+	margin:0px;
+	padding:0px;
+	border-top:8px solid #333;
+}
+
+#container{
+	position:relative;
+	width:960px;
+	margin:0px auto;
+	/*border:1px solid;*/ /* отладка */
+	/*text-align:left;*/
+}
+#cname{
+	color:#ccc;
+	font-size:2em;
+	font-weight:bold;
+	padding-left:20px;
+}
+#lname{
+	color:#333;
+	font-size:1em;
+	font-weight:bold;
+	padding-left:40px;
+	
+}
+a#lnav{
+	color:#333;
+	text-decoration:none;
+}
+a#lnav:hover{
+	color:#777;
+}
+
+#header{
+	clear:both;
+	display:block;
+	margin:8px 0px 30px 0px;
+	padding:8px 0px; /* сверху\снизу справа\слева */
+	border-bottom:1px solid #d0d0d0;
+}
+
+#nav{ 	
+	position:absolute;
+	top:0px;
+	right:0px;
+	font-size:14px;
+	font-weight:bold;
+
+/*	padding:0px 0px 0 0;*/
+	margin:14px 20px 0 0; /*27 возле линии 29px середина 45px возле нижней линии регулирует красивое положение ссылок возле линии*/
+
+	/*border:1px solid #d0d0d0;*/ /*отладка*/
+}
+
+ul#nav li{
+	list-style:none;
+	/*float:left;*/ /*можна в линию список построить и так!!*/
+	display:inline; /*преобразовывает список в горизонтальную линию*/
+	margin:0px;
+	padding:0 8px 0; /*верхний правый\левый нижний*/
+/*	padding-left:8px;
+	padding-right:8px;*/
+/*	border-left:1px solid #d0d0d0;*//*для красивых разделителей ссылок навигации*/
+	
+/*	border:1px solid #d0d0d0;*//*отладка*/
+}
+
+/*хак чтобы разделители были со всез сторон*/
+/*ul#nav li:last-child{
+	border-right:1px solid #d0d0d0; }*/
+
+#footer{
+	clear:both;
+	display:block;
+	text-align:center;
+/*	font-weight:bold;*/
+/*	width:100%;*/
+	border-top:1px solid #d0d0d0;
+	margin-top:30px;
+	color:#808080;
+}
+
+
+/*----------- form -------------------------------------*/
+#ipform{
+	float:left;
+/*	border:1px solid;*/
+}
+
+fieldset{
+	width: 216px;
+	margin:20px;
+	border:1px solid #ccc;
+	background: #f7fafb;
+}
+
+fieldset ol{ 
+	list-style: none; 
+	padding:0; 
+	margin:2px; 
+}
+
+fieldset ol li{ 
+	margin:0 0 9px 0; 
+	padding:0; 
+}
+
+fieldset input{
+	display:block;
+}
+
+input[type="submit"]{ 
+	border: 1px solid #333;
+	border-radius:3px;
+	height:25px;/*высота кнопки*/
+	background-color:#cbd5d9;
+}
+
+input[type="submit"]:hover{
+	background-color: #ffe;
+}
+
+input[type="text"],
+input[type="password"]{
+/*	display: block;*/
+	padding:0 7px;
+/*  width: 100%;*/
+	height:25px;
+/*  line-height: 45px;*/
+/*  font: 600 18px 'Roboto', sans-serif;*/
+/*  color: #000;
+  background: transparent;*/
+	border:1px solid #ccc;
+	border-radius:3px;
+/*  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;*/
+}
+
+/* для того чтобы при фокусе рамка подсвечивалась другим цветом */
+input[type="text"]:focus,
+input[type="password"]:focus{
+	border:1px solid #77a8d0; /*#a2b4ee;*/
+}
+
+/*------------ ошибки и оповещения ---------------------------------*/
+
+#error{ /* color влияет не только на шрифт но и на рамки */
+	width:400px;
+	margin:0px auto;
+	background-color:#FFD9E0;
+	text-align:center;
+	font-weight:bold;
+	color:#CD0000;
+	border-top:1px solid;
+	border-bottom:1px solid;
+}
+#lback{
+	width:400px;
+	margin:20px auto;
+}
+#ok{
+	width:400px;
+	margin:0px auto;
+	background-color:#CDFFCD;/*#BEFFBE; /*#98FB98;*/
+	text-align:center;
+	font-weight:bold;
+	color:green;
+	border-top:1px solid;
+	border-bottom:1px solid;
+}
+#button{
+	background-color:#cbd5d9;
+	border:1px solid #333;
+	border-radius:3px;
+	padding:5px;/*высота кнопки*/
+}
+#button a{
+	color:#333;
+	padding:4px;
+	font:14px Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+#button:hover{
+	background-color: #ffe;
+}
+/*-------------- сообщения с формы расчета айпи -------------------------*/
+#pip{
+/*	margin-top:165px;*/
+	position:relative;
+	top:55px;
+	left:20px;
+	width:400px;
+	margin:0 auto;
+	background-color:#E6E6E6;/*#BEFFBE; /*#98FB98;*/
+	text-align:center;
+	font-weight:bold;
+	color:#808080;
+	border-top:1px solid #C4C4C4;
+	border-bottom:1px solid #C4C4C4;
+
+}
