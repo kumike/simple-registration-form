@@ -62,7 +62,7 @@ $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
 //*** проверяем уникальность логина юзера ***
 //*** создаем объект подключения к базе
-$dbh = new PDO('mysql:host=localhost;dbname=regPass;charset=utf8','mishele','1437');
+include 'pdodb.php';
 //*** подготавливаем мускуел запрос и выполняем его
 $result = $dbh->prepare("SELECT id FROM user WHERE login=:login");
 $result->execute([':login'=>$login]);

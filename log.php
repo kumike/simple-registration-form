@@ -15,8 +15,7 @@ $menu->getMenu();
 
 //var_dump(isset($_POST['login']));
 
-$dbh = new PDO('mysql:host=localhost;dbname=regPass;charset=utf8','mishele','1437');
-
+include 'pdodb.php';
 //*** чистим юзерский ввод от нежелательных символов
 $login = trim(stripslashes(htmlentities($_POST['login'],ENT_QUOTES))) ?? false;
 //*** подготавливаем мускуел запрос и выполняем его

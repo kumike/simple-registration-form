@@ -21,7 +21,7 @@ $menu = new Menu();
 
 $menu->getLogInMenu();
 
-$dbh = new PDO('mysql:host=localhost;dbname=regPass;charset=utf8', 'mishele', '1437');
+include 'pdodb.php';
 //*** подготавливаем мускуел запрос и выполняем его
 $result = $dbh->prepare("SELECT id,login FROM user WHERE id=:id");
 $result->execute([':id'=>$_SESSION['id']]);
