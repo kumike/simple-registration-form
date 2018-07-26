@@ -14,7 +14,7 @@ EOT;
 	function getLoginMenu(){
 		echo <<<EOT
 <header id="header">
-	<span id="cname">PHP7 Powered :)</span><span id="lname">Привет, <strong>{$_SESSION['login']}</strong> </span>
+	<span id="cname">PHP7 Powered :)</span><span id="lname">Привет, <strong>{$_SESSION['login']}</strong></span>
 	<ul id="nav">
 		<li><a id="lnav" href="index.php">Главная</a></li>
         <li><a id="lnav" href="profile.php">Мой профиль</a></li>
